@@ -13,6 +13,7 @@ source /etc/rc.d/init.d/functions
 KAFKA_HOME=/opt/kafka
 KAFKA_USER=kafka
 export LOG_DIR=/var/log/kafka
+export EXTRA_ARGS="-Duser.home=/tmp"
 
 [ -e /etc/sysconfig/kafka ] && . /etc/sysconfig/kafka
 
