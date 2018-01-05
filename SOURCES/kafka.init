@@ -14,6 +14,7 @@ KAFKA_HOME=/opt/kafka
 KAFKA_USER=kafka
 export LOG_DIR=/var/log/kafka
 export EXTRA_ARGS="-Duser.home=/tmp"
+export JMX_PORT=9990
 
 [ -e /etc/sysconfig/kafka ] && . /etc/sysconfig/kafka
 
