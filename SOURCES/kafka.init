@@ -16,6 +16,7 @@ export LOG_DIR=/var/log/kafka
 export EXTRA_ARGS="-Duser.home=/tmp"
 export JMX_PORT=9990
 
+[ -e /etc/profile ] && . /etc/profile
 [ -e /etc/sysconfig/kafka ] && . /etc/sysconfig/kafka
 
 # See how we were called.
