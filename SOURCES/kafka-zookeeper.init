@@ -14,6 +14,7 @@ KAFKA_HOME=/opt/kafka
 ZOOKEEPER_USER=zookeeper
 export LOG_DIR=/var/log/zookeeper
 
+[ -e /etc/profile ] && . /etc/profile
 [ -e /etc/sysconfig/kafka ] && . /etc/sysconfig/kafka
 
 # See how we were called.
